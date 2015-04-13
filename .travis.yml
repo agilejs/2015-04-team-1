@@ -27,5 +27,13 @@ deploy:
       6ZPoeXH0W39dLFXFs8uoidEcsBRqnSjpimwsu7ywnAQYa9KgG0I='
 env:
   global:
-  - secure: Z2rM2Fbhaa/9UO8w8wXbxkgm6onNMwe7eu81G0w5Brhi+ZQbZMVNIjVBcg2cs0oQdF2JiA+iWSM9fwDKriZQVbbscbBiWqn76GEG8uBQthkC5jU+bMP4yaQYVW5VzeF7ADc+FA0mTDshfYWWuhfI8a/l9mWgdAe+2qM0NETA+WA=
-  - secure: YcUv/8DgUrLxjZ0po91oH8Z+GSzsF71qbDUf23ncUBEw/Ui0Stcyd/62i+JXwwlg5zUCaAsN5G0YrVjMGmlbP3yAy6LolChfU3oSCkkjfJlf4WMDQD3ykSl0Euyhgxr2d6UHEfBz4wK1sU7IU+ONB9mcNeAn0bxfu5quYKkq+iI=
+  - secure: ! 'DkaHw/6U+aeerdQK55sY0o+Yf+gNPcpCM6RbZ3YsGQwys6CFBXxZg2VfjLaa
+
+      PEmhrT11HshziHEaV2rODylJDmCZo3Fhu7+pI/KX88YMvZMtVURkQaSX9RxI
+
+      RIOGMzjnxbsN8zYBw3Mkc3wiq2uaM8yFdY0Z+zjUB+D8kOYa9So='
+  - secure: ! 'XrvTTzzlz4aR/M3tVrEJY1ZvvBDwJtgbiFvRn7BdRsayVquY3COkX5+yUs5x
+
+      5KOS8UtzfvqcAOA6qp+LMCgpMjkPGTLHHFCJDhfyGVqALCweAoLs3eUDUmyK
+
+      JsJVxC//U8v8mlbFl0SJysNUnuwY2hm6XXNyP9ZBhWsVvDdX01Y='
