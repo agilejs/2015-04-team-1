@@ -17,23 +17,23 @@ before_deploy:
 - rm -rf neo4j-community-2.1.7 neo4j-community-2.1.7-unix.tar.gz
 deploy:
   provider: heroku
-  app: agilejs-code-red
+  app: agilejs-team-1
   skip_cleanup: true
   api_key:
-  - secure: ! 'xO/4UtBoWCikY+h311tRSFBxkBKPV6oAX1ezvnVW3NpYzh97rs68Mm11CI5c
+    secure: ! 'L4VmLgxkeor6UbSY9H1bVYppZVCDiliRYZnOuM722PtZbE7WrP5Vqy6p5sf0
 
-      DQjx2cLo2EvpotE3E7ekg5LE0hnztrAJuUU6L0kSBm3SFGBiU756N9IyF43m
+      6h3vsNOl1+4JvY7ng/jSK+7Bmn/8VgN0YEzpXpyxpHJVkn2FcbZc/ugmaZdN
 
-      6ZPoeXH0W39dLFXFs8uoidEcsBRqnSjpimwsu7ywnAQYa9KgG0I='
+      DQ4TexBKifpv1sWOqZNYjvlGmR7neffzPNL1Xo85hOp9zS8kzmM='
 env:
   global:
-  - secure: ! 'DkaHw/6U+aeerdQK55sY0o+Yf+gNPcpCM6RbZ3YsGQwys6CFBXxZg2VfjLaa
+  - secure: ! 'MyTioo6Sn75VTWxNWTF7QzYe1Du9+f5cG9vPig8xsPP/izB0Z5ilCLZ00wYe
 
-      PEmhrT11HshziHEaV2rODylJDmCZo3Fhu7+pI/KX88YMvZMtVURkQaSX9RxI
+      CTM185BDKdBf0mhzO7lQUUuUfmOo0x2ehP4rqTS+Yk5kGgWZYX0bNVSOz5mT
 
-      RIOGMzjnxbsN8zYBw3Mkc3wiq2uaM8yFdY0Z+zjUB+D8kOYa9So='
-  - secure: ! 'XrvTTzzlz4aR/M3tVrEJY1ZvvBDwJtgbiFvRn7BdRsayVquY3COkX5+yUs5x
+      TEGFPSxaxHz/fFuPudIn1H1zBsUHgRW740B37upT9vnoJXNMjzc='
+  - secure: ! 'paP9VW9Sa2wDoFrmUiHmDAZTBggOI2Y/QZhDn71vkT8H6GjhLO5xRIbGf3kR
 
-      5KOS8UtzfvqcAOA6qp+LMCgpMjkPGTLHHFCJDhfyGVqALCweAoLs3eUDUmyK
+      G5tNcKHB+YlJ8JL0azCI8vKOMQL695/iRKSOfcOo6v0wp2TyLEo0MPo3RAZz
 
-      JsJVxC//U8v8mlbFl0SJysNUnuwY2hm6XXNyP9ZBhWsVvDdX01Y='
+      KvjOGVFP38akepnmJ0lF6gUlZZ00uHdpde7vk1tlgJiLesnvlHc='
