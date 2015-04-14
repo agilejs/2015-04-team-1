@@ -11,11 +11,7 @@
         </tr>
     </thead>
     <tbody>
-<<<<<<< HEAD
-        <tr ng-repeat="movie in movies | orderBy:'title'">
-=======
         <tr ng-repeat="movie in movies | orderBy:'+title'">
->>>>>>> a599911f01df3ae30524ce89ac4d632f6322f959
             <td>
                 <a href="#" ng-href="/movies/{{movie.id}}">
                     {{movie.title}}
