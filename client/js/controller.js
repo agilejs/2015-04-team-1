@@ -1,9 +1,9 @@
-function AppCtrl ($scope) {
+function AppCtrl($scope) {
     'use strict';
     $scope.title = 'The Movie Database';
 }
 
-function WelcomeCtrl ($scope, moviesResponse) {
+function WelcomeCtrl($scope, moviesResponse) {
     'use strict';
     $scope.movies = moviesResponse.data;
 }
@@ -14,7 +14,7 @@ WelcomeCtrl.resolve = {
     }
 };
 
-function MoviesListCtrl ($scope, $location, moviesResponse) {
+function MoviesListCtrl($scope, $location, moviesResponse) {
     'use strict';
     $scope.movies = moviesResponse.data;
     $scope.add = function () {
@@ -29,18 +29,18 @@ MoviesListCtrl.resolve = {
     }
 };
 
-function MoviesAddCtrl ($scope, $http, $location) {
+function MoviesAddCtrl($scope, $http, $location) {
     'use strict';
     $scope.movie = {};
     $scope.save = function (movie) {
         $http.post('/movies', movie)
-        .success(function(res) {
-            $location.path('/movies/' + res.id);
-        });
+            .success(function (res) {
+                $location.path('/movies/' + res.id);
+            });
     };
 }
 
-function MovieDetailCtrl ($scope, $http, $location, moviesResponse) {
+function MovieDetailCtrl($scope, $http, $location, moviesResponse) {
     'use strict';
     $scope.movie = moviesResponse.data;
 
@@ -51,7 +51,7 @@ function MovieDetailCtrl ($scope, $http, $location, moviesResponse) {
     };
 }
 
-function movieDetailResolver ($http, $route) {
+function movieDetailResolver($http, $route) {
     'use strict';
     var id = $route.current.params.id;
     return $http.get('/movies/' + id);
@@ -61,15 +61,15 @@ MovieDetailCtrl.resolve = {
     moviesResponse: movieDetailResolver
 };
 
-function MovieEditCtrl ($scope, $http, $location, moviesResponse) {
+function MovieEditCtrl($scope, $http, $location, moviesResponse) {
     'use strict';
     $scope.movie = moviesResponse.data;
 
     $scope.save = function () {
         $http.put('/movies/' + $scope.movie.id, $scope.movie)
-        .success(function (res) {
-            $location.path('/movies/' + $scope.movie.id);
-        });
+            .success(function (res) {
+                $location.path('/movies/' + $scope.movie.id);
+            });
     };
 }
 
@@ -77,9 +77,30 @@ MovieEditCtrl.resolve = {
     moviesResponse: movieDetailResolver
 };
 
-function NotFoundCtrl ($scope, $location) {
+function NotFoundCtrl($scope, $location) {
     'use strict';
     $scope.culprit = $location.search().culprit || 'unknown beast';
 }
 
 var ErrorCtrl = NotFoundCtrl;
+
+
+angular.module('MovieDatabase').controller('NavigationCtrl', function ($scope, $location) {
+    'use strict';
+
+    $scope.getClass = function (path) {
+
+        if ($location.path().substr(0, path.length) == path) {
+            if (path == "/" && $location.path() == "/") {
+                return "active";
+            } else if (path == "/") {
+                return "";
+            }
+            return "active"
+        } else {
+            return ""
+        }
+    }
+
+
+});
