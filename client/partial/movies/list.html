@@ -6,21 +6,17 @@
 
 <table class="table table-striped table-hover">
     <thead>
-        <tr>
-            <th>Title</th>
-        </tr>
+    <tr>
+        <th>Title</th>
+    </tr>
     </thead>
     <tbody>
-<<<<<<< HEAD
-        <tr ng-repeat="movie in movies | orderBy:'title'">
-=======
-        <tr ng-repeat="movie in movies | orderBy:'+title'">
->>>>>>> a599911f01df3ae30524ce89ac4d632f6322f959
-            <td>
-                <a href="#" ng-href="/movies/{{movie.id}}">
-                    {{movie.title}}
-                </a>
-            </td>
-        </tr>
+    <tr ng-repeat="movie in movies | orderBy:'+title'">
+        <td>
+            <a href="#" ng-href="/movies/{{movie.id}}">
+                {{movie.title}}
+            </a>
+        </td>
+    </tr>
     </tbody>
 </table>
